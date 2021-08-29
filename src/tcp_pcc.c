@@ -233,8 +233,8 @@ static void start_interval(struct sock *sk, struct pcc_data *pcc)
 /************************
  * Utility and decisions *
  * **********************/
-#define PCC_LOSS_MARGIN 5
-#define PCC_MAX_LOSS 10
+#define PCC_LOSS_MARGIN 15
+#define PCC_MAX_LOSS 20
 /* get x = number * PCC_SCALE, return (e^number)*PCC_SCALE */
 static u32 pcc_exp(s32 x)
 {
